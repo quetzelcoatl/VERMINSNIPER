@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#363535"
+    android:gravity="center"
+    tools:context=".Description">
+
+    <EditText
+        android:id="@+id/et_item_name"
+        android:layout_width="306dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:autoText="false"
+        android:background="#FFFFFF"
+        android:editable="true"
+        android:ems="10"
+        android:fadingEdge="horizontal|vertical|none"
+        android:hint="Description"
+        android:inputType="textPersonName"
+        android:isScrollContainer="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.287"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.007" />
+
+    <EditText
+        android:id="@+id/et_brand"
+        android:layout_width="235dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="21dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Warnings"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_item_name"
+        app:layout_constraintTop_toBottomOf="@+id/et_item_name"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn_add_item"
+        android:layout_width="130dp"
+        android:layout_height="69dp"
+        android:drawableRight="@drawable/sharp_thumb_up_black_48dp"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.886"
+        app:layout_constraintStart_toEndOf="@+id/buttongetlocation"
+        app:layout_constraintTop_toBottomOf="@+id/image99"
+        app:layout_constraintVertical_bias="0.527" />
+
+    <EditText
+        android:id="@+id/et_text"
+        android:layout_width="147dp"
+        android:layout_height="28dp"
+        android:background="#FFFFFF"
+        android:hint="Action"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_brand"
+        app:layout_constraintTop_toBottomOf="@+id/et_brand"
+        app:layout_constraintVertical_bias="0.045">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/btn_select_image2"
+        android:layout_width="62.5dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:background="#FFFFFF"
+        android:drawableBottom="@drawable/sharp_add_photo_alternate_black_48dp"
+        android:text="Gallery"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/image99"
+        app:layout_constraintHorizontal_bias="0.155"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttongetlocation"
+        app:layout_constraintVertical_bias="0.042" />
+
+    <ImageView
+        android:id="@+id/image99"
+        android:layout_width="192dp"
+        android:layout_height="302dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.976"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_item_name"
+        app:layout_constraintVertical_bias="0.461"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/cameraImage"
+        android:layout_width="110dp"
+        android:layout_height="62.5dp"
+        android:background="#FFFFFF"
+        android:drawableRight="@drawable/sharp_photo_camera_black_48dp"
+        android:text="CAMERA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_add_item"
+        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_select_image2"
+        app:layout_constraintVertical_bias="0.268" />
+
+    <Button
+        android:id="@+id/buttongetlocation"
+        android:layout_width="95dp"
+        android:layout_height="88dp"
+        android:background="#FFFFFF"
+        android:drawableBottom="@drawable/sharp_gps_fixed_black_48dp"
+        android:text="Get Location"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/image99"
+        app:layout_constraintHorizontal_bias="0.228"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_text"
+        app:layout_constraintVertical_bias="0.105" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/image99"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.375"
+        app:layout_constraintStart_toEndOf="@+id/et_item_name"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.033"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="false"
+        app:lottie_rawRes="@raw/checkmarksuccess">
+
+    </com.airbnb.lottie.LottieAnimationView>
+
+    <Button
+        android:id="@+id/check"
+        android:layout_width="97dp"
+        android:layout_height="59dp"
+        android:text="IBM"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.245"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

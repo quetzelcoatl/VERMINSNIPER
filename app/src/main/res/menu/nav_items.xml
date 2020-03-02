@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/Home_Fragment"
+        android:icon="@drawable/baseline_home_black_48dp"
+        android:title="@string/nav_home" />
+    <item
+        android:id="@+id/Map_Fragment"
+        android:icon="@drawable/baseline_map_black_48dp"
+        android:title="@string/nav_map" />
+    <item
+        android:id="@+id/Complain_Fragment"
+        android:icon="@drawable/baseline_error_outline_black_48dp"
+        android:title="@string/nav_complain" />
+</menu>

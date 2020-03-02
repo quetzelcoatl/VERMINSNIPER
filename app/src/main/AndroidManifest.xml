@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.camera"
+    tools:ignore="ExtraText">
+
+    <dist:module dist:instant="true" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+
+
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning"
+        android:icon="@mipmap/ic_launcher_foreground"
+        android:fullBackupContent="@xml/backup_descriptor">
+
+        <meta-data android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_key"/>
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".MainActivity"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Description">
+        </activity>
+        <activity
+            android:name="GPS">
+
+        </activity>
+        <activity android:name="AdjustLocation">
+
+        </activity>
+        <activity
+            android:name="JSONParser">
+
+        </activity>
+        <activity android:name="newJSON">
+
+        </activity>
+        <activity android:name="MAP">
+
+        </activity>
+        <activity android:name="MarkerInfoWindowAdapter">
+
+        </activity>
+
+        <activity android:name=".IBM_AI">
+
+        </activity>
+
+        <activity android:name=".home">
+
+        </activity>
+
+        <activity android:name=".CameraActivity">
+
+        </activity>
+
+        <activity android:name="CameraPreview">
+
+        </activity>
+
+        <activity android:name=".IBM_AI_NEW">
+
+        </activity>
+
+        <activity android:name="ComplainPage">
+
+        </activity>
+
+        <activity android:name=".picvalidatepage">
+
+        </activity>
+        <activity android:name=".picvalidatepage2">
+
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.CAMERA.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+        <meta-data
+            android:name="android.support.FILE_PROVIDER_PATHS"
+            android:resource="@xml/file_paths" >
+
+        </meta-data>
+        </provider>
+    </application>
+</manifest>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Vermin Sniper</string>
+    <string name="map_key" translatable="false">AIzaSyCkdqNZPdM4joF7Zf3BraO5Xk0IPyrcQMk</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_map">Map</string>
+    <string name="nav_complain">Complain</string>
+</resources>
