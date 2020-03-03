@@ -52,8 +52,8 @@
         app:lottie_loop="true"
         app:lottie_rawRes="@raw/train"
         app:lottie_speed="1"
-        tools:layout_editor_absoluteX="-60dp"
-        tools:layout_editor_absoluteY="-253dp">
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="308dp">
 
     </com.airbnb.lottie.LottieAnimationView>
 
