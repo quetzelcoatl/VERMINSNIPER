@@ -157,7 +157,7 @@ public class MainActivity extends AppCompatActivity {
                                                 else
                                                 {
 
-                                                        Intent intent = new Intent(getApplicationContext(), CameraActivity.class);
+                                                        Intent intent = new Intent(getApplicationContext(), cameraxandroid.class);
                                                         startActivity(intent);
                                                 }
                                         }
