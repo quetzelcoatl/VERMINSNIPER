@@ -169,14 +169,13 @@ public class picvalidatepage2 extends AppCompatActivity {
         for (ClassResult result : resultList) {
             if (result.getClassName().equals("garbage") || result.getClassName().equals("garbage heap") || result.getClassName().equals("Garbage") || result.getClassName().equals("landfill") || result.getClassName().equals("recycling plant")) {
                 kar = 1;
-                text.setTypeface(null, Typeface.BOLD_ITALIC);
                 text.append(result.getClassName() + "  " + result.getScore() * 100 + "%\n");
                 next.setVisibility(View.VISIBLE);
                 garbagecheck = 1;
                 loadingloading.setVisibility(View.INVISIBLE);
             } else {
                 loadingloading.setVisibility(View.INVISIBLE);
-                text.setTypeface(null, Typeface.BOLD);
+               // text.setTypeface(null, Typeface.BOLD);
                 text.append(result.getClassName() + "  " + result.getScore() * 100 + "%\n");
             }
         }

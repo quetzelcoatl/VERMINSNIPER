@@ -10,6 +10,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.core.content.FileProvider;
+import androidx.viewpager.widget.ViewPager;
+
+
 import android.Manifest;
 import android.accounts.Account;
 import android.annotation.SuppressLint;
@@ -61,6 +64,10 @@ public class MainActivity extends AppCompatActivity {
 
         Button buttonAddItem;
         Button btnTakePic;
+
+        ViewPager viewPager;
+       // SliderAdapter sliderAdapter;
+
         Button buttonaddimage,refresh,blackview;
         ImageView imageView;
         BottomNavigationView main_nav;
@@ -72,6 +79,8 @@ public class MainActivity extends AppCompatActivity {
         int CAMERA_REQUEST_CODE, LOCATION_CODE;
         Uri photoURI = null;
         TextView text;
+        Button help,about;
+      //  sliderAdapter sliderAdapter;
         Button complainmap;
         LottieAnimationView lottieAnimationView;
 
@@ -79,16 +88,41 @@ public class MainActivity extends AppCompatActivity {
         protected void onCreate(@Nullable Bundle savedInstanceState) {
                 super.onCreate(savedInstanceState);
                 setContentView(R.layout.activity_main);
+
+
+
+
                 check = 0;
                 complainmap = findViewById(R.id.buttoncomplainmap);
+                help = findViewById(R.id.helpme);
                 lottieAnimationView = findViewById(R.id.nointernet);
+                about = findViewById(R.id.about);
                 buttonAddItem = (Button) findViewById(R.id.btn_add_item);
                 refresh = findViewById(R.id.refresh);
                 lottieAnimationView.setVisibility(View.INVISIBLE);
                 refresh.setVisibility(View.INVISIBLE);
                 buttonAddItem.setVisibility(View.VISIBLE);
                 complainmap.setVisibility(View.VISIBLE);
+               // viewPager = new SliderAdapter(this);
 
+              //  viewPager.setVisibility(View.INVISIBLE);
+
+                about.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                                Intent about1 = new Intent(getApplicationContext(),aboutclass.class);
+                                startActivity(about1);
+                        }
+                });
+
+                help.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                               // viewPager.setVisibility(View.VISIBLE);
+                               // viewPager.setAdapter(sliderAdapter);
+                               // viewPager.setAdapter(sliderAdapter);
+                        }
+                });
                 refresh.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
@@ -157,7 +191,7 @@ public class MainActivity extends AppCompatActivity {
                                                 else
                                                 {
 
-                                                        Intent intent = new Intent(getApplicationContext(), cameraxandroid.class);
+                                                        Intent intent = new Intent(getApplicationContext(), CameraActivity.class);
                                                         startActivity(intent);
                                                 }
                                         }
