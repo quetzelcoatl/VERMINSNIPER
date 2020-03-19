@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2c003e"
+    android:orientation="vertical">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/textView"
+        android:layout_width="317dp"
+        android:layout_height="523dp"
+        android:background="@drawable/aboutround"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/textabout1"
+            android:layout_width="109dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="312dp"
+            android:fontFamily="@font/graduate"
+            android:gravity="center"
+            android:text="About"
+
+            android:textColor="#707070"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.075">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="298dp"
+            android:layout_height="330dp"
+            android:layout_marginBottom="104dp"
+            android:fontFamily="@font/alegreya_sans_medium"
+            android:gravity="center"
+            android:text="As denizens of the planet we have exploited the raw materials and thrived to what we are now, highly sophisticated and dominant creatures in the universe. The other side of the coin describes the “collateral damage” we have caused to this environment that scientifically sustains our existance. The developing and Underdeveloped contries are hit badly, the people are vulnerable to innumerable diseases because of our carelessness and dim-witted approaches to tackle problems. One of the main global crisis especially in developing countries is Proper Waste and Garbage management. As we acknowledge this problem, we henceforth initiated to build a smart AI-driven system to tackle this problem, we introduce Vermin Sniper. The app that detects unattended garbage based on probability, The app is very competant in getting it's job done, to serve mankind for greater good."
+            android:textColor="#707070"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.555"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textabout1"
+            app:layout_constraintVertical_bias="0.166" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="297dp"
+            android:layout_height="62dp"
+            android:fontFamily="@font/alegreya_sans_medium"
+            android:gravity="center"
+            android:text="The App is running IBM Watson Cloud services and is in it's  developmental phase, many major updates are on the way.  "
+            android:textColor="#707070"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.513"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/alegreya_sans_medium"
+            android:gravity="center"
+            android:text="The Eagle is Lurking, Vermin Sniper 2020."
+            android:textColor="#707070"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            app:layout_constraintVertical_bias="0.242" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="135dp"
+            android:layout_height="165dp"
+            android:background="@drawable/eagle"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/creds"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:background="@drawable/reg_edit"
+
+        android:fontFamily="@font/graduate"
+        android:text="Credits"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.888"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.562" />
+</androidx.constraintlayout.widget.ConstraintLayout>
